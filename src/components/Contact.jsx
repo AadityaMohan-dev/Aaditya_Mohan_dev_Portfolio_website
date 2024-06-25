@@ -10,20 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
   const [isLoading, setIsLoading] = useState(false);
-  const sendEmail = (event) => {
-    event.preventDefault();
-    // Handle the form data in state
-    console.log("Form submitted:");
-    emailjs.sendForm(
-      "service_ph6t1bp",
-      "template_ox125gv",
-      event.target,
-      "Wf427jilxoYNreaK2"
-    );
-    toast("Message Sent !!");
-    toast("Thanks for connecting")
-    event.target.reset();
-  };
+  
   async function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
