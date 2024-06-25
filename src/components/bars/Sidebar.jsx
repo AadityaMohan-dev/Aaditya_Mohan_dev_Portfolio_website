@@ -36,7 +36,7 @@ function Sidebar() {
                     </div>
                     <div id="adress" className='pt-2'>
                     <label htmlFor="email" className='text-xs font-semibold uppercase'>Address</label>
-                    <p className='text-sm font-semibold'>Greter Noida, India</p>
+                    <p className='text-sm font-semibold'>Greater Noida, India</p>
                     </div>
                 </div>
             </div>
