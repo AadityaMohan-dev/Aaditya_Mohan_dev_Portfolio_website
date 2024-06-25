@@ -41,10 +41,10 @@ function Sidebar() {
                 </div>
             </div>
             
-            <div id="socials" className='flex justify-between gap-5'>
-                <i class="ri-github-fill text-xl cursor-pointer text-yellow-400 hover:text-white"></i>
-                <i class="ri-instagram-fill text-xl cursor-pointer text-yellow-400 hover:text-white"></i>
-                <i class="ri-linkedin-box-fill text-xl cursor-pointer text-yellow-400 hover:text-white"></i>
+            <div id="socials" className='grid grid-cols-3 gap-5'>
+                <a href='https://github.com/AadityaMohan-dev'><i class="ri-github-fill text-2xl cursor-pointer  hover:text-yellow-400 text-yellow-300"></i></a>
+                <a href='https://www.instagram.com/aaditya._.mohan?igsh=eHZwZnFzZXB4aDFu&utm_source=qr'><i class="ri-instagram-fill text-2xl cursor-pointer  hover:text-yellow-400 text-yellow-300"></i></a>
+                <a href='https://linkedin.com/in/aaditya-mohan'><i class="ri-linkedin-box-fill text-2xl cursor-pointer  hover:text-yellow-400 text-yellow-300"></i></a>
                 </div>
             
             

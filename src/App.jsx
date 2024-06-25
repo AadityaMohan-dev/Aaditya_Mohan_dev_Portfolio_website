@@ -14,9 +14,7 @@ function App() {
     <div id="navbar">
     <Navbar/>
     </div>
-    <div id="main-content" className="px-5 py-8 overflow-y-hidden">
-      <About/>
-    </div>
+    
     </div>
   </div>
   
