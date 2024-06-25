@@ -4,13 +4,12 @@ import profile from ".././assets/Profile.png";
 import bg from ".././assets/p2.png";
 import bg2 from ".././assets/p3.png";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   const [isLoading, setIsLoading] = useState(false);
-  
+
   async function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
@@ -21,34 +20,34 @@ function Contact() {
         e.target,
         "Wf427jilxoYNreaK2"
       );
-      setIsLoading(false);
+      toast.success("Message Sent ...")
+      setTimeout(()=>{
+        setIsLoading(false);
+      },4000)
       e.target.reset();
     } catch (error) {
-      setIsLoading(false);
+      toast.error("Error in Sending the message")
+      setIsLoading(false)
     }
   }
-  
-  
-  
 
   return (
+        
     <>
-    <div id="toast" className="flex flex-row-reverse"><ToastContainer
-position="top-right"
-autoClose={5000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="light"
-/>
-
-</div>
+    <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+          transition: Bounce
+        />
       <div id="img-container" className="py-5 grid grid-cols-4">
-      
         <img src={hello} alt="" className="h-36 bg-contain rounded-xl  " />
         <img src={bg2} alt="" className="h-36 bg-contain rounded-xl  " />
         <img src={profile} alt="" className="h-36 bg-contain rounded-xl  " />
@@ -111,7 +110,7 @@ theme="light"
                 type="text"
                 id="sender_email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="name@flowbite.com"
+                placeholder="name@mail.com"
               />
             </div>
           </div>
@@ -133,15 +132,17 @@ theme="light"
             placeholder="Message..."
           ></textarea>
         </div>
-        <button
+       <div id="row-3" className="flex justify-between">
+       <button
           id="btn"
           type="submit"
           class="w-52 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-orange-600 to-yellow-400 group-hover:from-orange-600 group-hover:to-yellow-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
-        >
+          disabled={isLoading}>
           <span class=" w-52 uppercase relative px-5 py-2.5 transition-all ease-in duration-75 bg-zinc-800 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-            send
+            {isLoading ? "Sending..." : "Send"}
           </span>
         </button>
+       </div>
       </form>
     </>
   );
