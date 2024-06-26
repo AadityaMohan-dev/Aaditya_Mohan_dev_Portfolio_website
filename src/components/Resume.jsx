@@ -53,7 +53,7 @@ function Resume() {
             </div>
             <div id="content" className='p-5 max-w-9xl rounded-xl overflow-hidden shadow-xl  bg-zinc-800'>
                 <div id="row-2" className=''>
-                    <ul className='grid grid-cols-8 gap-5'>
+                    <ul className='grid grid-cols-3 md:grid-cols-8 gap-5'>
                         <li className='text-xs capitalize font-semibold'>React</li>
                         <li className='text-xs capitalize font-semibold'>Angular</li>
                         <li className='text-xs capitalize font-semibold'>Java</li>

@@ -1,11 +1,18 @@
-import React from 'react'
 import Profile from '../../assets/Profile.png'
 import 'remixicon/fonts/remixicon.css'
+import React, { useState } from 'react'
+import About from '../About';
+import Resume from '../Resume';
+import Contact from '../Contact';
+import Projects from '../Projects';
 
 function Sidebar() {
+  const [selected, setSelected] = useState("about");
+  const [component, setComponent] = useState(<About/>)
+  const [title, setTitle] = useState("About Me")
   return (
     <>
-    <div id="container-sidebar" className='w-full'>
+    <div id="container-sidebar" className='w-full py-5 lg:py-0'>
         <div id="profile-pic"className='flex justify-center items-center w-full'>
             <div id="img" className='rounded-xl w-36 bg-zinc-800 overflow-hidden  h-36 items-center flex justify-center '>
                 <img src={Profile} alt="" />
@@ -42,13 +49,18 @@ function Sidebar() {
             </div>
             
             <div id="socials" className='grid grid-cols-3 gap-5'>
-                <a href='https://github.com/AadityaMohan-dev'><i class="ri-github-fill text-2xl cursor-pointer  hover:text-yellow-400 text-yellow-300"></i></a>
-                <a href='https://www.instagram.com/aaditya._.mohan?igsh=eHZwZnFzZXB4aDFu&utm_source=qr'><i class="ri-instagram-fill text-2xl cursor-pointer  hover:text-yellow-400 text-yellow-300"></i></a>
-                <a href='https://linkedin.com/in/aaditya-mohan'><i class="ri-linkedin-box-fill text-2xl cursor-pointer  hover:text-yellow-400 text-yellow-300"></i></a>
+                <a href='https://github.com/AadityaMohan-dev'><i class="ri-github-fill text-2xl cursor-pointer  hover:text-yellow-400 text-white"></i></a>
+                <a href='https://www.instagram.com/aaditya._.mohan?igsh=eHZwZnFzZXB4aDFu&utm_source=qr'><i class="ri-instagram-fill text-2xl cursor-pointer  hover:text-yellow-400 text-white"></i></a>
+                <a href='https://linkedin.com/in/aaditya-mohan'><i class="ri-linkedin-box-fill text-2xl cursor-pointer  hover:text-yellow-400 text-white"></i></a>
                 </div>
-            
-            
-           
+        </div>
+        <div id="menu" className='py-10 hidden md:block lg:hidden'>
+            <ul className='lg:flex py-5 text-center lg:py-0  items-center bg-zinc-800   max-w-lg rounded-xl overflow-hidden shadow-lg'>
+                <li className={`cursor-pointer py-3 text-2xl hover:text-yellow-400 font-semibold uppercase ${selected == "about" ? "text-yellow-400" : "text-white"}`} onClick={()=>{setSelected("about"),setComponent(<About/>),setTitle("About Me")}}>About</li>
+                <li className={`cursor-pointer py-3 text-2xl hover:text-yellow-400 font-semibold uppercase ${selected == "resume" ? "text-yellow-400" : "text-white"}`} onClick={()=>{setSelected("resume"),setComponent(<Resume/>), setTitle("My Resume")}}>resume</li>
+                <li className={`cursor-pointer py-3 text-2xl hover:text-yellow-400 font-semibold uppercase ${selected == "project" ? "text-yellow-400" : "text-white"}`} onClick={()=>{setSelected("project"),setComponent(<Projects/>), setTitle("My Projects")}}>Projects</li>
+                <li className={`cursor-pointer py-3 text-2xl hover:text-yellow-400 font-semibold uppercase ${selected == "contact" ? "text-yellow-400" : "text-white"}`} onClick={()=>{setSelected("contact"),setComponent(<Contact/>),setTitle("Contact Form")}}>Contact</li>
+            </ul>
         </div>
     </div>
     </>

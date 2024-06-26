@@ -48,13 +48,13 @@ function Contact() {
           transition: Bounce
         />
       <div id="img-container" className="py-5 grid grid-cols-4">
-        <img src={hello} alt="" className="h-36 bg-contain rounded-xl  " />
-        <img src={bg2} alt="" className="h-36 bg-contain rounded-xl  " />
-        <img src={profile} alt="" className="h-36 bg-contain rounded-xl  " />
-        <img src={bg} alt="" className="h-36 bg-contain rounded-xl  " />
+        <img src={hello} alt="" className="md:h-36 bg-contain rounded-xl  " />
+        <img src={bg2} alt="" className="md:h-36 bg-contain rounded-xl  " />
+        <img src={profile} alt="" className="md:h-36 bg-contain rounded-xl  " />
+        <img src={bg} alt="" className="md:h-36 bg-contain rounded-xl  " />
       </div>
       <form class="max-w-full mx-full" onSubmit={handleSubmit}>
-        <div id="container" className="grid grid-cols-2 gap-8">
+        <div id="container" className="grid md:grid-cols-2 gap-8">
           <div id="row-1">
             <label
               for="website-admin"
@@ -80,7 +80,7 @@ function Contact() {
                 type="text"
                 id="website-admin"
                 class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Bonnie Green"
+                placeholder="Your Name"
               />
             </div>
           </div>
@@ -136,9 +136,9 @@ function Contact() {
        <button
           id="btn"
           type="submit"
-          class="w-52 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-orange-600 to-yellow-400 group-hover:from-orange-600 group-hover:to-yellow-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+          class="w-full md:w-52 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-orange-600 to-yellow-400 group-hover:from-orange-600 group-hover:to-yellow-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
           disabled={isLoading}>
-          <span class=" w-52 uppercase relative px-5 py-2.5 transition-all ease-in duration-75 bg-zinc-800 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+          <span class="w-full md:w-52 uppercase relative px-5 py-2.5 transition-all ease-in duration-75 bg-zinc-800 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
             {isLoading ? "Sending..." : "Send"}
           </span>
         </button>
