@@ -55,7 +55,7 @@ function Resume() {
             id="content"
             className="p-5 max-w-9xl rounded-xl overflow-hidden shadow-xl  bg-zinc-800"
           >
-            <div id="row-1" className="flex justify-between">
+            <div id="row-1" className="flex flex-wrap justify-between">
               <div id="college-name" className="font-semibold">
                 Full Stack Developer Software Engineer
               </div>
