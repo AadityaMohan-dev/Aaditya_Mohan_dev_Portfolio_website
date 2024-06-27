@@ -69,37 +69,37 @@ function Resume() {
                 2022 - Present
               </div>
             </div>
-            <li className="text-xs w-3/4 pt-2">
+            <li className="text-xs w-full lg:w-3/4 pt-2">
               Led the development of multiple projects leveraging MERN stack
               technology, including MongoDB, Express, ReactJS and NodeJS
               resulting in the delivery of resilient and scalable web
               applications.
             </li>
-            <li className="text-xs w-3/4 pt-2">
+            <li className="text-xs w-full lg:w-3/4 pt-2">
               Showcased adeptness in creating and managing UI components,
               optimizing development productivity, and upholding uniformity in
               design elements across all applications.{" "}
             </li>
 
-            <li className="text-xs w-3/4 pt-2">
+            <li className="text-xs w-full lg:w-3/4 pt-2">
               Efficiently integrated state management solutions using Redux,
               significantly fortifying application stability and scalability.{" "}
             </li>
 
-            <li className="text-xs w-3/4 pt-2">
+            <li className="text-xs w-full lg:w-3/4 pt-2">
               Enhanced website performance through implementation of code
               splitting, lazy loading and image optimization techniques,
               resulting in a 30% reduction in load times.{" "}
             </li>
 
-            <li className="text-xs w-3/4 pt-2">
+            <li className="text-xs w-full lg:w-3/4 pt-2">
               Improved database performance by optimizing query execution time,
               leading to a 40% reduction in loading time for customer data
               retrieval and processing, thereby streamlining operations in a
               fast-paced tech environment.{" "}
             </li>
 
-            <li className="text-xs w-3/4 pt-2">
+            <li className="text-xs w-full lg:w-3/4 pt-2">
               Implementation OAuth and its concepts with Single sign-On (SSO)
               for enhanced security and seamless user authentication.{" "}
             </li>
