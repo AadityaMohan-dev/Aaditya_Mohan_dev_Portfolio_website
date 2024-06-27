@@ -4,7 +4,7 @@ import bg2 from '../assets/portfolio.jpg'
 function Projects() {
   return (
     <>
-    <div id="container-project" className='py-5'>
+    <div id="container-project" className='py-5 lg:h-[490px] lg:overflow-y-auto'>
     <div class="grid xl:grid-cols-3 gap-5 justify-center py-10">
       <div id="prom-dev" className=" p-5 max-w-lg rounded-xl overflow-hidden shadow-xl  bg-zinc-800">
         <div id="head-1" className='flex gap-5'>

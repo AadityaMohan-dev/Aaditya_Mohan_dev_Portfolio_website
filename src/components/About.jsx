@@ -5,7 +5,7 @@ import uddeshya from '.././assets/uddeshya.png'
 function About() {
   return (
     <>
-      <div id="container-about" className="">
+      <div id="container-about" className="lg:h-[490px] lg:overflow-y-auto">
         <div id="about" className="py-10 lg:py-3 text-wrap">
           <p>
             I am a creative "Full Stack Developer" from Greater Noida, India working in web development. I enjoy 
@@ -15,15 +15,15 @@ function About() {
         </div>
         <div id="what-doing" className="py-3">
             <h1 className="font-semibold text-2xl">What I'm Doing</h1>
-            <div id="wd-cards" className="pt-5 flex flex-col xl:flex-row gap-5 md:justify-around">
-                <div id="web-dev" className="flex gap-5 p-5 max-w-xl  xl:max-w-sm rounded-xl overflow-hidden shadow-xl  bg-zinc-800">
+            <div id="wd-cards" className="pt-5 flex flex-col xl:flex-row gap-5 md:justify-between">
+                <div id="web-dev" className="flex gap-5 p-5 max-w-full  xl:max-w-full rounded-xl overflow-hidden shadow-xl  bg-zinc-800">
                     <div id="icn" className="text-yellow-500 text-2xl"><i class="ri-window-fill"></i></div>
                     <div id="i-data" className="">
                         <label htmlFor="" className="font-semibold text-sm">Web Development</label>
                         <p className="text-xs">High quality development of sites at the professional level using MERN, MEAN and SpringBoot.</p>
                     </div>
                 </div>
-                <div id="prom-dev" className="flex gap-5 p-5 max-w-xl xl:max-w-sm rounded-xl overflow-hidden shadow-xl  bg-zinc-800">
+                <div id="prom-dev" className="flex gap-5 p-5 max-w-full xl:max-w-full rounded-xl overflow-hidden shadow-xl  bg-zinc-800">
                     <div id="icn" className="text-yellow-500 text-2xl"><i class="ri-links-line"></i></div>
                     <div id="i-data" className="">
                         <label htmlFor="" className="font-semibold text-sm">Langchain Development</label>
@@ -34,7 +34,7 @@ function About() {
         </div>
         <div id="testimonials" className="pt-3">
         <h1 className="font-semibold text-2xl">Testimonials</h1>
-        <div id="wd-cards" className="pt-4 grid xl:grid-cols-3 gap-5">
+        <div id="wd-cards" className="pt-4 grid xl:grid-cols-3 gap-5 ">
                 <div id="prom-dev" className="flex gap-5 p-5 max-w-xl rounded-xl overflow-hidden shadow-xl  bg-zinc-800">
                     <div id="icn-img" className=""><img src={uddeshya} alt=""  className="w-28"/></div>
                     <div id="i-data" className="">

@@ -47,11 +47,13 @@ function Contact() {
           theme="colored"
           transition: Bounce
         />
-      <div id="img-container" className="py-5 grid grid-cols-4">
-        <img src={hello} alt="" className="md:h-36 bg-contain rounded-xl  " />
+      <div id="img-container" className="py-5 flex flex-wrap justify-around lg:justify-between">
+        <img src={hello} alt="" className="h-full md:h-36 bg-contain rounded-xl  " />
+        <div id="memoji" className="grid grid-cols-3 pt-10 lg:pt-0 lg:relative lg:w-3/4 ">
         <img src={bg2} alt="" className="md:h-36 bg-contain rounded-xl  " />
         <img src={profile} alt="" className="md:h-36 bg-contain rounded-xl  " />
         <img src={bg} alt="" className="md:h-36 bg-contain rounded-xl  " />
+        </div>
       </div>
       <form class="max-w-full mx-full" onSubmit={handleSubmit}>
         <div id="container" className="grid md:grid-cols-2 gap-8">

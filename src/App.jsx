@@ -19,7 +19,7 @@ function App() {
           className="w-full md:w-96   bg-zinc-900   pt-5  rounded-xl overflow-hidden shadow-lg "
         >
           <div id="heading" className="w-96 h-10 items-center px-5 block md:hidden">
-              <h1 className="font-customFont text-4xl">Portfolio</h1>
+              <h1 className="text-4xl">Portfolio</h1>
               <img
                 width="50"
                 height="50"
