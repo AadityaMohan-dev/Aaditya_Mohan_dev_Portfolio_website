@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <div id="container-about" className="">
-        <div id="about" className="py-10 lg:py-3">
+        <div id="about" className="py-10 lg:py-3 text-wrap">
           <p>
             I am a creative "Full Stack Developer" from Greater Noida, India working in web development. I enjoy 
             turning complex problems into simple, beautiful and intutive designs.
