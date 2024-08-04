@@ -118,52 +118,52 @@ function Resume() {
           >
             <div id="row-2" className="">
               <ul className=" flex flex-wrap justify-start gap-5">
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   React
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   Angular
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   Java
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   Spring Boot
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   Node JS
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   Express JS
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   MySQL
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   MongoDB
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   Postman
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   TailwindCSS
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   JavaScript
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   TypeScript
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   Langchain
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   Python
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   HTML
                 </li>
-                <li className="text-xs capitalize font-semibold border border-white p-2 rounded-lg shadow-lg shadow-black">
+                <li className="text-xs capitalize font-semibold border cursor-pointer hover:bg-white hover:text-gray-800 border-white p-2 rounded-lg shadow-lg shadow-black">
                   CSS
                 </li>
               </ul>
