@@ -3,9 +3,9 @@ import resume from ".././assets/resume.pdf";
 function Resume() {
   return (
     <>
-      <div id="container-resume" className="lg:h-[490px] xl:h-screen lg:overflow-y-auto">
+      <div id="container-resume" className="lg:h-[490px]  lg:overflow-y-scroll">
         <div id="container" className="">
-          <div id="row-1" className="flex justify-between pb-1 xl:pb-5">
+          <div id="row-1" className="flex justify-between pb-1 ">
             <div id="head-1" className="flex gap-3 pb-3 pt-2">
               <div id="icn" className="text-yellow-400 text-2xl font-thin">
                 <i class="ri-graduation-cap-line"></i>

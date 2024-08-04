@@ -12,7 +12,7 @@ function Sidebar() {
   const [title, setTitle] = useState("About Me")
   return (
     <>
-    <div id="container-sidebar" className='w-full py-5 lg:py-0 xl:pt-16'>
+    <div id="container-sidebar" className='w-full py-5 lg:py-0 '>
         <div id="profile-pic"className='flex justify-center items-center w-full'>
             <div id="img" className='rounded-xl lg:w-36 bg-zinc-800 overflow-hidden  lg:h-36 items-center flex justify-center '>
                 <img src={Profile} alt="" />
