@@ -3,14 +3,14 @@ import resume from ".././assets/resume.pdf";
 function Resume() {
   return (
     <>
-      <div id="container-resume" className="lg:h-[490px]  lg:overflow-y-scroll">
+      <div id="container-resume" className="lg:h-[600px]  lg:overflow-y-scroll">
         <div id="container" className="">
           <div id="row-1" className="flex justify-between pb-1 ">
             <div id="head-1" className="flex gap-3 pb-3 pt-2">
               <div id="icn" className="text-yellow-400 text-2xl font-thin">
                 <i class="ri-graduation-cap-line"></i>
               </div>
-              <h1 className="text-xl">Education</h1>
+              <h1 className="text-2xl">Education</h1>
             </div>
             <a
               href={resume}
@@ -49,15 +49,15 @@ function Resume() {
             <div id="icn" className="text-yellow-400 text-2xl font-thin">
               <i class="ri-bookmark-line"></i>
             </div>
-            <h1 className="text-xl">Experience</h1>
+            <h1 className="text-2xl">Experience</h1>
           </div>
           <div
             id="content"
             className="p-5 max-w-9xl rounded-xl overflow-hidden shadow-xl  bg-zinc-800"
           >
             <div id="row-1" className="flex flex-wrap justify-between">
-              <div id="college-name" className="font-semibold">
-                Full Stack Developer Software Engineer
+              <div id="college-name" className="text-xl font-semibold">
+                Full Stack Developer ( Software Engineer )
               </div>
               <span className="text-xs text-gray-400">Chennai, India</span>
             </div>
@@ -69,39 +69,31 @@ function Resume() {
                 2022 - Present
               </div>
             </div>
-            <li className="text-xs xl:text-xs w-full  pt-2">
-              Led the development of multiple projects leveraging MERN stack
-              technology, including MongoDB, Express, ReactJS and NodeJS
-              resulting in the delivery of resilient and scalable web
-              applications.
+            <li className="text-md w-full  pt-2">
+            Full-Stack Development: Designed and developed scalable web applications using Java, Spring Boot. {" "}
             </li>
-            <li className="text-xs w-full  pt-2">
-              Showcased adeptness in creating and managing UI components,
-              optimizing development productivity, and upholding uniformity in
-              design elements across all applications.{" "}
+            <li className="text-md w-full  pt-2">
+            ReactJS, improving user experience and operational efficiency.{" "}
             </li>
 
-            <li className="text-xs w-full  pt-2">
+            <li className="text-md w-full  pt-2">
               Efficiently integrated state management solutions using Redux,
               significantly fortifying application stability and scalability.{" "}
             </li>
 
-            <li className="text-xs w-full  pt-2">
-              Enhanced website performance through implementation of code
-              splitting, lazy loading and image optimization techniques,
-              resulting in a 30% reduction in load times.{" "}
+            <li className="text-md w-full  pt-2">
+            Code Quality & Mentorship: Conducted code reviews, identified areas for improvement, and mentored
+            junior developers to uphold high coding standards and best practices.{" "}
             </li>
 
-            <li className="text-xs w-full  pt-2">
-              Improved database performance by optimizing query execution time,
-              leading to a 40% reduction in loading time for customer data
-              retrieval and processing, thereby streamlining operations in a
-              fast-paced tech environment.{" "}
+            <li className="text-md w-full  pt-2">
+              Database Optimization: Enhanced database performance by optimizing SQL queries and indexing
+              strategies, reducing page load times by 20%.{" "}
             </li>
 
-            <li className="text-xs w-full  pt-2">
-              Implementation OAuth and its concepts with Single sign-On (SSO)
-              for enhanced security and seamless user authentication.{" "}
+            <li className="text-md w-full  pt-2">
+            Agile & Collaboration: Worked in Agile (Scrum) environments, collaborating with cross-functional teams
+            to deliver high-quality software solutions.{" "}
             </li>
           </div>
         </div>
@@ -110,7 +102,7 @@ function Resume() {
             <div id="icn" className="text-yellow-400 text-2xl">
               <i class="ri-macbook-line"></i>
             </div>
-            <h1 className="text-xl">My Skills</h1>
+            <h1 className="text-2xl">My Skills</h1>
           </div>
           <div
             id="content"
