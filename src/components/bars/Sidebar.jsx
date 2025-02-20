@@ -62,6 +62,7 @@ function Sidebar() {
                 <li className={`cursor-pointer py-3 text-2xl hover:text-yellow-400 font-semibold uppercase ${selected == "contact" ? "text-yellow-400" : "text-white"}`} onClick={()=>{setSelected("contact"),setComponent(<Contact/>),setTitle("Contact Form")}}>Contact</li>
             </ul>
         </div>
+
     </div>
     </>
   )
