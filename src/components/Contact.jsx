@@ -61,7 +61,7 @@ function Contact() {
               required
               name="user_name"
               type="text"
-              className="w-full p-2 border rounded-md bg-gray-50 dark:bg-gray-700 dark:text-white"
+              className="w-full p-2 border text-black rounded-md bg-gray-50 dark:bg-gray-700 dark:text-white"
               placeholder="Your Name"
             />
           </div>
@@ -71,7 +71,7 @@ function Contact() {
               required
               name="email_from"
               type="email"
-              className="w-full p-2 border rounded-md bg-gray-50 dark:bg-gray-700 dark:text-white"
+              className="w-full p-2 border text-black rounded-md bg-gray-50 dark:bg-gray-700 dark:text-white"
               placeholder="name@mail.com"
             />
           </div>
@@ -82,7 +82,7 @@ function Contact() {
             required
             name="message"
             rows="4"
-            className="w-full p-2 border lg:h-64 rounded-md bg-gray-50 dark:bg-gray-700 dark:text-white"
+            className="w-full p-2 border text-black lg:h-64 rounded-md bg-gray-50 dark:bg-gray-700 dark:text-white"
             placeholder="Message..."
           ></textarea>
         </div>
