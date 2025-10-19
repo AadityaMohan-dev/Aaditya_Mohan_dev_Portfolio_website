@@ -82,14 +82,14 @@ function Contact() {
             required
             name="message"
             rows="4"
-            className="w-full p-2 border rounded-md bg-gray-50 dark:bg-gray-700 dark:text-white"
+            className="w-full p-2 border lg:h-64 rounded-md bg-gray-50 dark:bg-gray-700 dark:text-white"
             placeholder="Message..."
           ></textarea>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-start ">
           <button
             type="submit"
-            className="w-full md:w-52 p-2 text-white bg-gradient-to-br from-orange-600 to-yellow-400 rounded-lg hover:from-orange-700 hover:to-yellow-500 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+            className="w-full md:w-52 p-3  uppercase font-extrabold tracking-widest  text-white bg-gradient-to-br from-orange-600 to-yellow-400 rounded-lg hover:from-orange-700 hover:to-yellow-500 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
             disabled={isLoading}
           >
             {isLoading ? "Sending..." : "Send"}

@@ -3,7 +3,7 @@ import resume from "../assets/resume.pdf";
 
 function Resume() {
   return (
-    <div className="container mx-auto p-4 lg:h-[600px] lg:overflow-y-scroll">
+    <div className="container mx-auto p-4  xl:h-[700px] lg:h-[600px] lg:overflow-y-auto">
       {/* Education Section */}
       <div className="mb-6">
         <div className="flex flex-wrap justify-between items-center pb-2">
@@ -17,7 +17,7 @@ function Resume() {
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2.5 bg-gradient-to-br from-orange-600 to-yellow-400 text-white rounded-lg shadow-md hover:from-orange-700 hover:to-yellow-500"
+            className="px-5 py-3 mb-3 bg-gradient-to-br from-orange-600 to-yellow-400 text-white rounded-lg shadow-md hover:from-orange-700 hover:to-yellow-500"
           >
             Download My Resume
           </a>
@@ -49,7 +49,7 @@ function Resume() {
           </div>
           <div className="flex flex-wrap justify-between py-3">
             <div className="text-gray-400 text-xs">Hexaware Technology</div>
-            <div className="text-yellow-400 text-xs font-semibold">2022 - Present</div>
+            <div className="text-yellow-400 text-xs font-semibold">Aug, 2022 - May, 2025</div>
           </div>
           <ul className="list-disc list-inside space-y-2 text-md mt-2">
             <li>Developed scalable web applications using Java and Spring Boot.</li>
@@ -72,7 +72,7 @@ function Resume() {
         </div>
         <div className="p-5 bg-zinc-800 rounded-xl shadow-xl">
           <ul className="flex flex-wrap gap-4">
-            {["React", "Angular", "Java", "Spring Boot", "Node JS", "Express JS", "MySQL", "MongoDB", "Postman", "TailwindCSS", "JavaScript", "TypeScript", "Langchain", "Python", "HTML", "CSS"].map((skill) => (
+            {[ "Java", "Spring Boot","React", "MySQL", "MongoDB", "Postman", "TailwindCSS", "JavaScript", "TypeScript", "Langchain", "PostgresSQL", "HTML", "CSS", "Git", "GitHub","Python", "MongoDB",].map((skill) => (
               <li
                 key={skill}
                 className="text-xs font-semibold border border-white p-2 rounded-lg shadow-md cursor-pointer hover:bg-white hover:text-gray-800 transition"
